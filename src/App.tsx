@@ -14,7 +14,7 @@ function App() {
 
   return (
     <main className="container">
-      <h1>Welcome to Tauri + React</h1>
+      <h1 className="text-yellow-200">Welcome to Tauri + React</h1>
 
       <div className="row">
         <a href="https://vite.dev" target="_blank">
@@ -41,7 +41,9 @@ function App() {
           onChange={(e) => setName(e.currentTarget.value)}
           placeholder="Enter a name..."
         />
-        <button type="submit">Greet</button>
+        <button type="submit" className="bg-purple-500">
+          Greet
+        </button>
       </form>
       <p>{greetMsg}</p>
     </main>
